@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      uri:  mongodb://localhost:27017
+      database: microservice
+
+  application:
+    name: RATING-SERVICE
+
+server:
+  port: 4444
+
+eureka:
+    client:
+      service-url:
+        default-zone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+
